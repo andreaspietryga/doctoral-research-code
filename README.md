@@ -6,59 +6,85 @@ at Bielefeld University:
 **Advancing the Next Industrial Revolution: The Role of AI, Smart Products,
 and Algorithmic Decision Making**
 
-This repository contains the functional Wolfram Mathematica implementations
-used in three dissertation papers. The projects combine reinforcement learning,
+This repository contains the computational implementations developed and used
+across three dissertation projects. The research combines reinforcement learning,
 dynamic optimization, simulation, game theory, and algorithm design to study
 sequential decision problems under uncertainty.
 
+All dissertation code included in this repository is functional and was used
+in the underlying doctoral research.
+
 ## Research Projects
 
-### 1. Optimal Timing of Product Introduction and Safety Investments
-Analytical dynamic models of safety investment and autonomous-vehicle market
-introduction under deterministic and stochastic liability regulation.
+### 1. The Optimal Timing of Product Introduction and Safety Investments for Automated Vehicles
 
-**Methods:** dynamic optimization, optimal control, open-loop strategies,
-Markov strategies, welfare analysis.
+This project studies how liability regulation affects safety investment and
+market-introduction decisions for autonomous vehicles.
 
-### 2. Safety Investment and Market Introduction under Endogenous Training
-A two-stage framework combining autonomous-vehicle learning simulations with
-dynamic investment optimization.
+The research develops analytical dynamic models under deterministic and
+stochastic liability and examines both open-loop and Markov investment
+strategies.
 
-The first stage uses TD(0)-Search to model vehicle learning. The resulting
-performance data are used in a second-stage investment problem. A Dyna-2
-approach provides state-dependent investment decisions and is compared with
-an open-loop benchmark.
+**Methods:** Dynamic Optimization, Optimal Control, Open-Loop Strategies,
+Markov Strategies, Stochastic Modeling, Welfare Analysis
 
-**Methods:** TD(0)-Search, Dyna-2, simulation, reinforcement learning,
-dynamic optimization.
+---
 
-### 3. Collusion under Algorithmic Pricing
-Research on tacit collusion among reinforcement-learning pricing agents.
+### 2. Safety Investment and Market Introduction of Automated Vehicles:
+### An Analysis of Endogenous Training Effects
 
-The project includes implementations of tabular Q-learning and the proposed
-Smooth Q-Learning and Smooth Dyna-Q algorithms. The algorithms are evaluated
-in both potential and non-potential pricing environments.
+This project develops a two-stage framework linking autonomous-vehicle learning
+with dynamic investment decisions.
 
-**Methods:** Q-learning, Dyna-Q, Smooth Q-Learning, Smooth Dyna-Q,
-multi-agent reinforcement learning, algorithmic pricing.
+In the first stage, a TD(0)-Search algorithm simulates the learning process of
+an autonomous vehicle. Performance measures such as accident rates, traffic
+violations, and completion times are then used as inputs into a dynamic
+investment problem.
 
-## Software
+The project compares an open-loop investment strategy with a state-dependent
+approach based on the Dyna-2 reinforcement learning algorithm.
 
-The original dissertation code was developed in **Wolfram Mathematica**.
-Python implementations of selected algorithms are currently being developed
-as extensions of the doctoral research.
+**Methods:** TD(0)-Search, Dyna-2, Reinforcement Learning, Simulation,
+Dynamic Optimization
+
+---
+
+### 3. Collusion under Algorithmic Pricing: How Robust Is It?
+
+This project investigates algorithmic collusion among reinforcement-learning
+pricing agents.
+
+It includes implementations of standard tabular Q-Learning as well as
+Smooth Q-Learning and Smooth Dyna-Q, two algorithms developed as part of the
+doctoral research to mitigate collusive behavior and promote convergence toward
+competitive Nash equilibria in the tested pricing environments.
+
+Smooth Dyna-Q combines reinforcement learning with a model-based planning
+component to improve learning efficiency and convergence behavior.
+
+The algorithms are evaluated in both potential and non-potential pricing games,
+including the pricing environment studied by Calvano et al. (2020).
+
+**Methods:** Q-Learning, Dyna-Q, Smooth Q-Learning, Smooth Dyna-Q,
+Multi-Agent Reinforcement Learning, Model-Based Planning, Algorithmic Pricing
+
+---
 
 ## Repository Structure
 
-- `paper-1-optimal-timing/` — analytical safety-investment and welfare models
-- `paper-2-endogenous-training/` — AV learning simulations and investment models
-- `paper-3-algorithmic-collusion/` — Q-learning and Smooth Dyna-Q experiments
-
-## Author
-
-**Andreas Pietryga, Dr. rer. pol.**
-
-Computational Economics  
-Bielefeld University
-
-LinkedIn: https://www.linkedin.com/in/andreaspietryga
+```text
+doctoral-research-code/
+│
+├── README.md
+│
+├── paper-1-optimal-timing/
+│   ├── README.md
+│   └── code/
+│
+├── paper-2-endogenous-training/
+│   ├── README.md
+│   └── code/
+│
+└── paper-3-algorithmic-collusion/
+    ├── README.md
+    └── code/

@@ -88,36 +88,37 @@ doctoral-research-code/
 └── paper-3-algorithmic-collusion/
     ├── README.md
     └── code/
+```
 
 Each project directory contains the corresponding computational implementations
-and will include additional documentation describing the individual files,
-methods, and execution procedure.
+and additional documentation describing the individual files, methods, and
+execution procedure.
 
 ## Software
 
 The original dissertation implementations were developed primarily in
-Wolfram Mathematica.
+**Wolfram Mathematica**.
 
 Selected reinforcement-learning algorithms are currently being translated and
-extended in Python as part of continued research and development.
+extended in **Python** as part of continued research and development.
 
 ## Research Areas
-Reinforcement Learning
-Multi-Agent Reinforcement Learning
-Dynamic Optimization
-Optimal Control
-Sequential Decision-Making
-Game Theory
-Algorithmic Pricing
-Autonomous Systems
-Computational Economics
 
-##Author
+- Reinforcement Learning
+- Multi-Agent Reinforcement Learning
+- Dynamic Optimization
+- Optimal Control
+- Sequential Decision-Making
+- Game Theory
+- Algorithmic Pricing
+- Autonomous Systems
+- Computational Economics
 
-Andreas Pietryga, Dr. rer. pol.
+## Author
 
-Computational Economics
+**Andreas Pietryga, Dr. rer. pol.**
+
+Computational Economics  
 Bielefeld University
 
-## LinkedIn:
-https://www.linkedin.com/in/andreaspietryga
+[LinkedIn](https://www.linkedin.com/in/andreaspietryga)

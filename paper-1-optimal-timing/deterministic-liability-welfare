@@ -1,3 +1,12 @@
+(*Purpose*)
+(*Computes optimal safety investments and welfare outcomes for the deterministic-liability specification of Paper 1.*)
+
+(*Requirements*)
+(*Tested with Wolfram Mathematica 14.*)
+
+(*Execution*)
+(*Run the notebook from top to bottom using a fresh kernel.*)
+
 (* Content-type: application/vnd.wolfram.mathematica *)
 
 (*** Wolfram Notebook File ***)

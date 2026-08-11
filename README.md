@@ -89,9 +89,9 @@ doctoral-research-code/
     ├── README.md
     └── *.nb
 
-Each project directory contains the corresponding computational implementations
-and additional documentation describing the individual files, methods, and
-execution procedure.
+Each project directory contains the corresponding Wolfram Mathematica
+implementations together with detailed documentation of the research question,
+methods, computational experiments, and main results.
 
 ## Software
 

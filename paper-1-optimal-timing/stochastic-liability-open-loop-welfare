@@ -1,5 +1,5 @@
 (*Purpose*)
-(*Computes optimal safety investments and welfare outcomes for open-loop specification under liability uncertainty of Paper 2.*)
+(*Computes optimal safety investments and welfare outcomes for open-loop specification under liability uncertainty of Paper 1.*)
 
 (*Requirements*)
 (*Tested with Wolfram Mathematica 14.*)

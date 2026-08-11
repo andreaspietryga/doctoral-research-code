@@ -79,16 +79,15 @@ doctoral-research-code/
 │
 ├── paper-1-optimal-timing/
 │   ├── README.md
-│   └── code/
+│   └── *.nb
 │
 ├── paper-2-endogenous-training/
 │   ├── README.md
-│   └── code/
+│   └── *.nb
 │
 └── paper-3-algorithmic-collusion/
     ├── README.md
-    └── code/
-```
+    └── *.nb
 
 Each project directory contains the corresponding computational implementations
 and additional documentation describing the individual files, methods, and

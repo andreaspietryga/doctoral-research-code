@@ -2,19 +2,18 @@
 
 ## Overview
 
-This project contains the Wolfram Mathematica implementations supporting the
+This directory contains the Wolfram Mathematica implementations supporting the
 first paper of my doctoral dissertation in Computational Economics.
 
-The research studies how liability regulation affects a monopolistic producer's
+The research examines how liability regulation affects a monopolistic producer's
 safety investments and the timing of market introduction of autonomous vehicles.
 
-The model combines dynamic investment decisions, endogenous accident
-probabilities, market demand, liability allocation, and welfare analysis over a
-finite planning horizon.
+The model combines dynamic investment decisions, accident risk, market demand,
+liability allocation, and welfare analysis over a finite planning horizon.
 
-## Research Question
+## Research Questions
 
-The project investigates how different liability regimes affect:
+The analysis investigates how alternative liability regimes affect:
 
 - optimal safety investment,
 - the timing of market introduction,
@@ -22,37 +21,30 @@ The project investigates how different liability regimes affect:
 - producer profits,
 - and social welfare.
 
-The analysis considers both deterministic liability and uncertainty regarding
+The framework considers both deterministic liability and uncertainty regarding
 future liability regulation.
 
-## Computational Models
-
-The repository contains three Wolfram Mathematica notebooks.
+## Code Files
 
 ### `deterministic-liability-welfare.nb`
 
-Implements the deterministic-liability benchmark.
+Implements the deterministic-liability benchmark and computes the corresponding
+investment and welfare outcomes.
 
-The notebook numerically determines optimal investment decisions over the
-planning horizon and evaluates the resulting welfare outcomes under different
-liability allocations.
+### `open-loop-welfare.nb`
 
-### `stochastic-liability-open-loop-welfare.nb`
+Implements the investment problem under uncertainty using an open-loop strategy.
 
-Implements the model under uncertainty about future liability regulation using
-an open-loop investment strategy.
+Future investment decisions are determined without conditioning them on the
+subsequently realized state.
 
-Investment decisions are determined without conditioning future actions on the
-subsequently realized liability state.
+### `markov-welfare.nb`
 
-### `stochastic-liability-markov-welfare.nb`
-
-Implements the model under liability uncertainty using state-dependent Markov
-investment strategies.
+Implements the investment problem using state-dependent Markov strategies.
 
 Investment decisions can therefore respond to the realized state of the system.
 
-## Main Economic Results
+## Main Results
 
 The analysis shows that liability regulation can affect safety investment in
 non-monotonic ways.
@@ -61,12 +53,14 @@ In particular:
 
 - stronger producer liability does not necessarily increase safety investment
   at all demand levels;
-- delaying market introduction reduces cumulative safety investment and can
-  increase accident risk;
-- the qualitative conclusions remain robust when uncertainty about future
+- delaying market introduction reduces cumulative safety investment, increases
+  accident risk, and reduces producer profits;
+- the main qualitative results remain robust when uncertainty about future
   liability regulation is introduced;
 - neither full producer liability nor full consumer liability maximizes social
-  welfare in the analyzed framework.
+  welfare in the analyzed framework;
+- an intermediate liability allocation generates the highest welfare in the
+  model.
 
 ## Methods
 
@@ -80,26 +74,25 @@ In particular:
 
 ## Software Requirements
 
-The notebooks were developed in:
+The notebooks have been tested successfully with:
 
-**Wolfram Mathematica 12.3**
+**Wolfram Mathematica 14**
 
-Later Mathematica versions also run the notebooks, but the original
-implementations were developed and tested using Mathematica 12.3.
+All three notebooks execute successfully under this version.
 
-## Running the Code
+## How to Run
 
 Each notebook can be executed independently.
 
 1. Open the desired `.nb` file in Wolfram Mathematica.
 2. Start with a clean Mathematica kernel.
 3. Evaluate the notebook from top to bottom.
-4. The parameter values are defined near the beginning of each notebook.
+4. Model parameters are defined within the respective notebook.
 5. The subsequent cells solve the corresponding investment problem and compute
    the welfare outcomes.
 
-The notebooks contain numerical optimization routines and may require
-substantial computation time depending on the model specification and hardware.
+Depending on the model specification and hardware, some numerical optimization
+steps may require additional computation time.
 
 ## Paper
 
@@ -110,8 +103,8 @@ Automated Vehicles*
 
 Doctoral research in Computational Economics, Bielefeld University.
 
-## Repository
+## Related Repository
 
-This project forms part of the doctoral research code repository:
+This project is part of:
 
-`doctoral-research-code`
+[doctoral-research-code](https://github.com/andreaspietryga/doctoral-research-code)

@@ -1,3 +1,12 @@
+(*Purpose*)
+(*Computes optimal safety investments and welfare outcomes for open-loop specification under liability uncertainty of Paper 2.*)
+
+(*Requirements*)
+(*Tested with Wolfram Mathematica 14.*)
+
+(*Execution*)
+(*Run the notebook from top to bottom using a fresh kernel.*)
+
 (* Content-type: application/vnd.wolfram.mathematica *)
 
 (*** Wolfram Notebook File ***)
